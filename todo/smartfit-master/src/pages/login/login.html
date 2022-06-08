@@ -1,0 +1,29 @@
+<ion-header>
+
+</ion-header>
+
+<ion-content padding>
+  <div class="space">
+    <img src="../../assets/imgs/logosmartfit.png"/>
+  </div>
+
+  <ion-list class="space2">
+
+    <ion-item>
+      <ion-label fixed>RUT</ion-label>
+      <ion-input type="text" [(ngModel)]="rut" ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label fixed>Contraseña</ion-label>
+      <ion-input type="password" [(ngModel)]="contrasena"></ion-input>
+    </ion-item>
+
+    <ion-item>
+    </ion-item>
+
+  </ion-list>
+
+  <button ion-button full (click)="login()" [disabled]="btnLogin">{{btnLoginText}}</button>
+
+</ion-content>

@@ -1,0 +1,184 @@
+{
+  "user": {
+    "name": "Maria",
+    "apellido": "Salas"
+  },
+  "favorites": [
+    {
+      "label": "Transferencias",
+      "path": "./transferencias"
+    },
+    {
+      "label": "Traspasos",
+      "path": "./traspasos"
+    },
+    {
+      "label": "Ficheros",
+      "path": "./ficheros"
+    }
+  ],
+  "summary": [
+    {
+      "title": "SALDO CUENTAS",
+      "value": 153000
+    },
+    {
+      "title": "AHORRO-INVERSION",
+      "value": 100000
+    },
+    {
+      "title": "FINANCIACION",
+      "value": 50000
+    }
+  ],
+  "navigation-menu": [
+    {
+      "label": "CUENTAS TARJETAS Y TPVS",
+      "path": ""
+    },
+    {
+      "label": "FINANCIACION",
+      "path": ""
+    },
+    {
+      "label": "COMERCIO EXTERIOR",
+      "path": ""
+    },
+    {
+      "label": "COBROS Y PAGOS",
+      "path": ""
+    }
+  ],
+  "sidebar-data": [
+    {
+      "date": 22,
+      "concept": "Pago nóminas",
+      "value": -1000
+    },
+    {
+      "date": 22,
+      "concept": "Pago nóminas",
+      "value": 799
+    },
+    {
+      "date": 22,
+      "concept": "Pago nóminas",
+      "value": 25555
+    },
+    {
+      "date": 23,
+      "concept": "Pago nóminas",
+      "value": -100000
+    },
+    {
+      "date": 23,
+      "concept": "Pago nóminas",
+      "value": 10000
+    },
+    {
+      "date": 23,
+      "concept": "Pago nóminas",
+      "value": 23567
+    },
+    {
+      "date": 23,
+      "concept": "Pago nóminas",
+      "value": -2456
+    },
+    {
+      "date": 23,
+      "concept": "Pago nóminas",
+      "value": 23567
+    },
+    {
+      "date": 22,
+      "concept": "Pago nóminas",
+      "value": -3333
+    },
+    {
+      "date": 22,
+      "concept": "Pago nóminas",
+      "value": 42342
+    },
+    {
+      "date": 22,
+      "concept": "Pago nóminas",
+      "value": -3.8
+    },
+    {
+      "date": 22,
+      "concept": "Pago nóminas",
+      "value": 12712
+    },
+    {
+      "date": 23,
+      "concept": "Pago nóminas",
+      "value": -999
+    },
+    {
+      "date": 23,
+      "concept": "Pago nóminas",
+      "value": -99
+    },
+    {
+      "date": 23,
+      "concept": "Pago nóminas",
+      "value": 127624
+    }
+  ],
+  "menu-data": [
+    {
+      "label": "cuentas",
+      "counts": [
+        {
+          "title": "Pago nóminas",
+          "extra": "*5493",
+          "value": 1987765.38,
+          "disponibility": 3087,
+          "movement": 2
+        },
+        {
+          "title": "Pago nóminas",
+          "extra": "*5001",
+          "value": 1317615.95,
+          "disponibility": 307,
+          "movement": 1
+        }
+        ,
+        {
+          "title": "Pago nóminas",
+          "extra": "*5712",
+          "value": 191231.99,
+          "disponibility": 16823,
+          "movement": 5
+        }
+        ,
+        {
+          "title": "Pago nóminas",
+          "extra": "*5712",
+          "value": 191231.99,
+          "disponibility": 16823,
+          "movement": 5
+        }
+        
+        
+      ]
+    },
+    {
+      "label": "cards",
+      "cards": [
+        {
+          "name": "M.Salas López",
+          "extra": "...5913",
+          "progress": 75000
+        }
+        ,
+        {
+          "name": "M.Salas López",
+          "extra": "...5423",
+          "progress": 75000
+        }
+      ]
+    }
+  ]
+}

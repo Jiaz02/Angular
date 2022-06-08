@@ -1,0 +1,93 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Registro de entrenamientos
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list>
+
+    <ion-item>
+      <ion-label>Rut:</ion-label>
+      <ion-input [(ngModel)]="model.rut" value="{{rut}}" [readonly]="true"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Número de ejercicio:</ion-label>
+      <ion-select [(ngModel)]="model.numero" (ngModelChange)="onChange($event)">
+        <ion-option *ngFor="let ejercicio of rutina; let i = index" value="{{ejercicio.orden}}">{{ i+1 }} : {{ejercicio.tipo}}</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Fecha / Hora:</ion-label>
+      <ion-input [(ngModel)]="model.fechahora" value="{{fechahora}}" [readonly]="true"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Tipo ejercicio:</ion-label>
+      <ion-input [(ngModel)]="model.tipo" value="{{tipo}}" [readonly]="true"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Número de maquina:</ion-label>
+      <ion-input [(ngModel)]="model.maquina" value="{{maquina}}" [readonly]="true"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Asiento:</ion-label>
+      <ion-input [(ngModel)]="model.asiento" value="{{asiento}}" [readonly]="true"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Apoyo:</ion-label>
+      <ion-input [(ngModel)]="model.apoyo" value="{{apoyo}}" [readonly]="true"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Series:</ion-label>
+      <ion-input [(ngModel)]="model.serie" value="{{serie}}" [readonly]="true"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Repeticiones:</ion-label>
+      <ion-input [(ngModel)]="model.repeticion" value="{{repeticion}}" [readonly]="true"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Carga:</ion-label>
+      <ion-input [(ngModel)]="model.carga" value="{{carga}} KG" [readonly]="true"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Tiempo:</ion-label>
+      <ion-input [(ngModel)]="model.n" value="{{n}}" [readonly]="true"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <button type="button" (click)="iniciar()" [disabled]='btnIniciar' ion-button full>Iniciar</button>
+          </ion-col>
+          <ion-col>
+            <button type="button" (click)="pausar()" [disabled]='btnPausar' ion-button full>Pausar</button>
+          </ion-col>
+          <ion-col>
+            <button type="button" (click)="reiniciar()" [disabled]='btnReiniciar' ion-button full>Reiniciar</button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+
+    <ion-item>
+      <button type="button" (click)="addMessage()" [disabled]='btnGuardar' ion-button full>Guardar</button>
+    </ion-item>
+  </ion-list>
+
+</ion-content>
